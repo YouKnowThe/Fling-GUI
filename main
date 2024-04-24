@@ -76,7 +76,7 @@ end
 
 local Input = MainTab:CreateInput({
    Name = "Walkspeed",
-   PlaceholderText = "1-500",
+   PlaceholderText = "1-99999",
    RemoveTextAfterFocusLost = true,
    Callback = function(Text)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
@@ -85,7 +85,7 @@ local Input = MainTab:CreateInput({
 
 local Slider = MainTab:CreateSlider({
    Name = "JumpPower Slider",
-   Range = {1, 350},
+   Range = {1, 99999},
    Increment = 1,
    Suffix = "Jump",
    CurrentValue = 16,
@@ -97,7 +97,7 @@ local Slider = MainTab:CreateSlider({
 
 local Slider = MainTab:CreateSlider({
    Name = "WalkSpeed Slider",
-   Range = {1, 350},
+   Range = {1, 99999},
    Increment = 1,
    Suffix = "Speed",
    CurrentValue = 16,
